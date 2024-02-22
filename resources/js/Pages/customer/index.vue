@@ -19,7 +19,7 @@
                     <td class="td">
                         <Link :href="`/customer/${customer.id}`" class="td_link">View</Link>
                         <Link :href="`/customer/${customer.id}/edit`" class="td_link ml-3">Edit</Link>
-                        <Link :href="`/customer/${customer.id}`" method="DELETE" as="button" class="td_link ml-3">Delete</Link>
+                        <Link :href="`/customer/${customer.id}`" method="DELETE"  class="td_link ml-3" >Delete</Link>
                     </td>
                 </tr>
                 <tr v-else>

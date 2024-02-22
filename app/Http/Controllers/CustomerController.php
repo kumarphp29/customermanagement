@@ -48,7 +48,7 @@ class CustomerController extends Controller
         $customer->phone_number        = $request->phone_number;
         $customer->address             = $request->address;
         $customer->save();
-        return redirect('/')->with('status', 'Customer Added Successfully');
+        return redirect('/')->with('success', 'Customer Added Successfully');
     }
 
     /**
@@ -89,7 +89,7 @@ class CustomerController extends Controller
         $customer->phone_number        = $request->phone_number;
         $customer->address             = $request->address;
         $customer->save();
-        return redirect('/')->with('status', 'Customer Updated Successfully');
+        return redirect('/')->with('success', 'Customer Updated Successfully');
     }
 
     /**
@@ -98,6 +98,6 @@ class CustomerController extends Controller
     public function destroy(string $id)
     {
         Customer::find($id)->delete();
-        return redirect('/')->with('status', 'Customer Deleted Successfully');
+        return redirect('/')->with('success', 'Customer Deleted Successfully');
     }
 }

@@ -49,3 +49,6 @@
 .view_back_div{
     @apply md:inline-flex space-y-4 md:space-y-0 w-full p-4 text-gray-500 items-center
 }
+.alert{
+    @apply p-2 border border-gray-800 text-white bg-green-500 rounded-md bottom-10;
+}
